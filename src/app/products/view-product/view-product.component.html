@@ -1,0 +1,15 @@
+<div class="card mt-4">
+    <img class="" src="{{productData.productImg}}" alt="">
+    <div class="card-body">
+        <h3 class="card-title"> {{productData.productName}}</h3>
+        <h4>Rs {{productData.price}}</h4>
+        <p class="card-text">{{productData.description}}</p>
+        <p class="text-secondary">{{productData.rating}} stars</p>
+        <h5>More details :</h5>
+        <p class="card-text">Color: {{productData.color}}</p>
+        <p class="card-text">In stock: {{productData.isAvailable}}</p>
+        <p class="card-text">Reviewed by: {{productData.reviews}}</p>
+        <a href="products/update-product/{{productData.id}}">Update Product</a> ||
+        <a href="products/delete-product/{{productData.id}}">Delete Product</a>
+    </div>
+</div>
